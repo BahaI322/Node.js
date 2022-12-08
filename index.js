@@ -24,6 +24,7 @@ app.get('/todolist', (req, res) => {
     res.send(result.rows);
   });
 });
+
 app.listen(3000, () => {
   console.log('Application listening on port 3000!');
 });
