@@ -1,6 +1,7 @@
 const express = require('express');
-const app = express();
 const { Client } = require('pg');
+
+const app = express();
 const client = new Client({
   host: 'localhost',
   port: 5432,
