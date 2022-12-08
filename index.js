@@ -10,9 +10,11 @@ const client = new Client({
   database: 'postgres',
 });
 client.connect();
+
 app.get('/', (req, res) => {
   res.send({message: 'Hello WWW!'});
 });
+
 app.get('/todolist', (req, res) => {
   client.query('SELECT * FROM todolist', (err, result) => {
     if (err){
